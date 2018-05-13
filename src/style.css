@@ -1,0 +1,41 @@
+.app {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: 100;
+}
+
+.app h1 {
+    font-size: 80px;
+}
+
+.app form input {
+    font-size: 24px;
+    padding: 14px 5px;
+    width: 100%;
+}
+
+.app .list {
+    list-style: none;
+    width: 100%;
+    font-size: 24px;
+    padding-left: 0px;
+}
+
+.app .list .todo {
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+}
+
+.app .list .todo .todoText{
+    float: left;
+}
+
+.app .list .todo .todoDelete{
+    float: right;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+}
