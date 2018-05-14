@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const AddToDo = ({ addItem }) => {
+const AddToDo = ({ addToDo }) => {
   let input;
 
   return (
@@ -10,7 +10,7 @@ const AddToDo = ({ addItem }) => {
       if (!input.value.trim()) {
         return
       }
-      addItem(input.value)
+      addToDo(input.value)
       input.value=''
     }}>
       <input ref={i => input = i} placeholder="enter task"/>
@@ -19,7 +19,7 @@ const AddToDo = ({ addItem }) => {
 }
 
 AddToDo.propTypes = {
-  addItem: PropTypes.func.isRequired
+  addToDo: PropTypes.func.isRequired
 }
 
 export default AddToDo

@@ -20,17 +20,26 @@
     list-style: none;
     width: 100%;
     font-size: 24px;
-    padding-left: 0px;
+    padding-left: 0;
+    margin: 0;
 }
 
 .app .list .todo {
     width: 100%;
     height: 40px;
     margin: 5px 0px;
+    cursor: pointer;
+    padding: 14px 0px 14px 14px;
+}
+
+.app .list .todo:hover {
+    background-color: lightskyblue;
 }
 
 .app .list .todo .todoText{
     float: left;
+    vertical-align: middle;
+    line-height: 40px;
 }
 
 .app .list .todo .todoDelete{
@@ -38,4 +47,5 @@
     font-size: 30px;
     border: none;
     cursor: pointer;
+    background: none;
 }
